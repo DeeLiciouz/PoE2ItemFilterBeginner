@@ -1,0 +1,223 @@
+#=========================================================
+# DeeLiciouz PoE2 Loot Filter
+# EA V1.1 Basic Filter
+#=========================================================
+
+#==============================
+#           CURRENCY
+#==============================
+
+Show # Scroll of Wisdom
+BaseType == "Scroll of Wisdom"
+	SetFontSize 30
+	SetBorderColor 120 60 50 255
+
+Show # Currency TIER 0
+	Class == "Stackable Currency"
+	BaseType "Divine Orb" "Mirror of Kalandra" "Perfect Jeweller's Orb"
+	SetFontSize 45
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 255 0 0 255
+	SetTextColor 255 0 0 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Circle
+
+Show # Currency TIER 1
+	Class == "Stackable Currency"
+	BaseType "Orb of Annulment" "Orb of Chance" "Gemcutter's Prism"
+	SetFontSize 40
+	SetTextColor 255 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 2 300
+	PlayEffect Orange
+	MinimapIcon 0 Orange Circle
+
+Show # Currency TIER 2
+	Class == "Stackable Currency"
+	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Glassblower's Bauble" "Lesser Jeweller's Orb" "Greater Jeweller's Orb"
+	SetFontSize 36
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 0 0 0 255
+	SetTextColor 0 0 0 255
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Circle
+
+Show # Currency TIER 3
+	Class == "Stackable Currency"
+	BaseType "Exalted Orb" "Regal Orb" "Artificer's Orb"
+	SetFontSize 30
+	SetBackgroundColor 255 255 255 255
+	SetBorderColor 255 200 130 255
+	SetTextColor 0 0 0 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+
+Show # Currency TIER 4
+	Class == "Stackable Currency"
+	BaseType "Orb of Transmutation" "Orb of Augmentation" "Orb of Alteration" "Armourer's Scrap" "Blacksmith's Whetstone" "Arcanist's Etcher"
+	SetFontSize 30
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 210 178 135 255
+	MinimapIcon 2 White Circle
+
+Show # CURRENCY SHARDS
+	Class == "Stackable Currency"
+	BaseType "Shard"
+	SetFontSize 26
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 0 0 0 180
+
+Show # ESSENCES
+	Class == "Stackable Currency"
+	BaseType "Essence"
+	SetFontSize 36
+	SetBackgroundColor 135 180 135 255
+	SetBorderColor 130 100 150 255
+	SetTextColor 0 0 0 255
+
+Show # FRAGMENTS
+	BaseType " Fragment" "Ultimatum" "Breachstone" "Simulacrum" " Tablet" "Cowardly Fate" "Deadly Fate" "Victorious Fate"
+	SetBackgroundColor 65 20 80
+	SetBorderColor 255 207 255
+	SetTextColor 255 207 255
+
+Show # WAYSTONES
+	BaseType "Waystone"
+	Rarity <= Rare
+	SetFontSize 36
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255
+	PlayAlertSound 4 300
+	PlayEffect White Temp
+
+Show # SPLINTERS
+	Class "Currency"
+	BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact"
+	SetTextColor 255 207 132
+	SetBorderColor 255 207 132
+
+
+
+
+
+#==============================
+#            GOLD
+#==============================
+
+
+Show # GOLD > 150 Stack
+	BaseType == "Gold"
+    StackSize >= 150
+	SetBackgroundColor 20 20 0 120
+	SetTextColor 213 181 110 215
+	SetFontSize 30
+
+
+
+
+#==============================
+#            ITEMS
+#==============================
+
+
+Show # AMULETS RINGS BELTS
+	Class == "Rings" "Amulets" "Belts"
+	Rarity Normal Magic Rare
+	SetFontSize 36
+	SetBorderColor 127 90 255 255
+
+
+Show # Uniques
+	Rarity Unique
+	SetFontSize 45
+	SetBackgroundColor 175 96 37 255
+	SetBorderColor 100 50 30 255
+	SetTextColor 0 0 0 255
+	PlayAlertSound 1 300
+	PlayEffect Yellow
+	MinimapIcon 1 Brown Star
+
+Show # Rares
+	Sockets = 0
+	Quality = 0
+	Rarity Rare
+	SetFontSize 36
+	SetBackgroundColor 63 55 15 200
+	SetBorderColor 200 175 65 255
+	SetTextColor 240 210 80 255
+
+Show # Magics
+	Sockets = 0
+	Quality = 0
+	Rarity Magic
+	SetFontSize 30
+	SetBackgroundColor 20 25 50 200
+	SetBorderColor 90 110 190 255
+	SetTextColor 115 145 245 255
+
+Show # Normals
+	Sockets = 0
+	Quality = 0
+	Rarity Normal
+	SetFontSize 26
+	SetBackgroundColor 200 200 200 200
+	SetBorderColor 255 255 255 200
+	SetTextColor 255 255 255 255
+
+
+
+
+#==============================
+#           SOCKETS
+#==============================
+
+Show # Rare w/ Sockets
+	Sockets > 0
+	Rarity  Rare
+	SetFontSize 36
+	SetBorderColor 255 0 0 255
+
+Show # Magic w/ Sockets
+	Sockets > 0
+	Rarity Magic
+	SetBorderColor 255 0 0 255
+
+Show # Normal w/ Sockets
+	Sockets > 0
+	Rarity Normal
+	SetBorderColor 255 0 0 255
+
+
+
+
+#==============================
+#           QUALITY
+#==============================
+
+Show # RARE
+	Quality > 0
+	Rarity  Rare
+	SetFontSize 36
+	SetTextColor 255 0 0 255
+
+Show # MAGIC
+	Quality > 0
+	Rarity Magic
+	SetTextColor 255 0 0 255
+
+Show # NORMAL
+	Quality > 0
+	Rarity Normal
+	SetTextColor 255 0 0 255
+
+#==============================
+#       SAFETY FEATURES
+#==============================
+
+Show # Non Filtered
+	SetFontSize 60
