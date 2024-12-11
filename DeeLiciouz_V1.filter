@@ -113,11 +113,15 @@ Show # SPLINTERS
 Show # GOLD > 150 Stack
 	BaseType == "Gold"
     StackSize >= 150
-	SetBackgroundColor 20 20 0 120
+	SetBackgroundColor 20 20 0 220
 	SetTextColor 213 181 110 215
 	SetFontSize 30
 
-
+Show # GOLD
+    BaseType == "Gold"
+    SetBackgroundColor 20 20 0 220
+    SetTextColor 213 181 110 215
+    SetFontSize 20
 
 
 #==============================
