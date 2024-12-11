@@ -1,4 +1,6 @@
-Download the .filter File.
+Download the .filter File by cloning the repository, or by clicking the green "Code" Button and Download ZIP.
+
+Extract ZIP if necessary.
 
 Go ingame, Options -> Game -> Open Filter Directory
 
