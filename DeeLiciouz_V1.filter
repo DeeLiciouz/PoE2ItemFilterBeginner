@@ -1,7 +1,58 @@
 #=========================================================
 # DeeLiciouz PoE2 Loot Filter
-# EA V1.1 Basic Filter
+# EA V1.1b Basic Filter
 #=========================================================
+
+#==============================
+#         SKILL GEMS
+#==============================
+
+
+	Show # Skill Gems
+	Class == "Skill Gems"
+	SetFontSize 45
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 255 255 200
+	SetTextColor 0 255 255 200
+	PlayEffect Cyan
+	MinimapIcon 0 Cyan Diamond
+
+	Show # Support Gems
+	Class == "Support Gems"
+	SetFontSize 45
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 0 255 200
+    SetTextColor 255 0 255 200
+    PlayEffect Pink
+    MinimapIcon 0 Pink Diamond
+
+	Show # Skill Gems
+	BaseType == "Uncut Skill Gem"
+	SetFontSize 40
+	SetBackgroundColor 50 0 0 220
+	SetBorderColor 225 0 0 200
+	SetTextColor 0 255 255 255
+	PlayEffect Cyan
+	MinimapIcon 2 Cyan Triangle
+
+	Show # Support Gems
+	BaseType == "Uncut Support Gem"
+	SetFontSize 40
+	SetBackgroundColor 50 0 0 220
+	SetBorderColor 255 0 0 200
+	SetTextColor 255 0 255 255
+	PlayEffect Pink
+	MinimapIcon 2 Pink Triangle
+
+	Show # Spirit Gems
+	BaseType == "Uncut Spirit Gem"
+	SetFontSize 40
+	SetBackgroundColor 50 0 0 220
+	SetBorderColor 255 0 0 200
+	SetTextColor 255 185 90 255
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Triangle
+
 
 #==============================
 #           CURRENCY
@@ -100,10 +151,6 @@ Show # SPLINTERS
 	BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact"
 	SetTextColor 255 207 132
 	SetBorderColor 255 207 132
-
-
-
-
 
 #==============================
 #            GOLD
