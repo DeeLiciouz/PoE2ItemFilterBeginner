@@ -76,7 +76,7 @@ Show # RELICS
 #         SKILL GEMS
 #==============================
 
-	Show # Skill Gems
+Show # Skill Gems
 	Class == "Skill Gems"
 	SetFontSize 45
 	SetBackgroundColor 0 0 0
@@ -144,7 +144,7 @@ Show # Currency TIER 0
 
 Show # Currency TIER 1
 	Class == "Stackable Currency"
-	BaseType "Orb of Annulment" "Orb of Chance" "Gemcutter's Prism"
+	BaseType "Orb of Annulment" "Orb of Chance" "Gemcutter's Prism" "Greater Jeweller's Orb"
 	SetFontSize 40
 	SetTextColor 255 0 0 255
 	SetBorderColor 0 0 0 255
@@ -155,7 +155,7 @@ Show # Currency TIER 1
 
 Show # Currency TIER 2
 	Class == "Stackable Currency"
-	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Glassblower's Bauble" "Lesser Jeweller's Orb" "Greater Jeweller's Orb"
+	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Glassblower's Bauble" "Lesser Jeweller's Orb"
 	SetFontSize 36
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 0 0 0 255
@@ -166,7 +166,7 @@ Show # Currency TIER 2
 
 Show # Currency TIER 3
 	Class == "Stackable Currency"
-	BaseType "Exalted Orb" "Regal Orb" "Artificer's Orb"
+	BaseType "Exalted Orb" "Artificer's Orb"
 	SetFontSize 30
 	SetBackgroundColor 255 255 255 255
 	SetBorderColor 255 200 130 255
@@ -177,7 +177,7 @@ Show # Currency TIER 3
 
 Show # Currency TIER 4
 	Class == "Stackable Currency"
-	BaseType "Orb of Transmutation" "Orb of Augmentation" "Orb of Alteration" "Armourer's Scrap" "Blacksmith's Whetstone" "Arcanist's Etcher"
+	BaseType "Orb of Transmutation" "Regal Orb" "Orb of Augmentation" "Orb of Alteration" "Armourer's Scrap" "Blacksmith's Whetstone" "Arcanist's Etcher"
 	SetFontSize 30
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -230,13 +230,13 @@ Show # GOLD > 150 Stack
     StackSize >= 150
 	SetBackgroundColor 20 20 0 220
 	SetTextColor 213 181 110 215
-	SetFontSize 30
+	SetFontSize 40
 
 Show # GOLD
     BaseType == "Gold"
     SetBackgroundColor 20 20 0 220
     SetTextColor 213 181 110 215
-    SetFontSize 20
+    SetFontSize 30
 
 
 #==============================
