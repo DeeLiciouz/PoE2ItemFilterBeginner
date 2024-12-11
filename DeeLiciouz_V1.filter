@@ -1,6 +1,6 @@
 #=========================================================
 # DeeLiciouz PoE2 Loot Filter
-# EA V1.1b Basic Filter
+# EA V1.1c Basic Filter
 #=========================================================
 
 #==============================
@@ -284,7 +284,7 @@ Show # Normals
 	Quality = 0
 	Rarity Normal
 	SetFontSize 26
-	SetBackgroundColor 200 200 200 200
+	SetBackgroundColor 150 150 150 200
 	SetBorderColor 255 255 255 200
 	SetTextColor 255 255 255 255
 
