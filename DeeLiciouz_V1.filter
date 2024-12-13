@@ -1,6 +1,6 @@
 #=========================================================
 # DeeLiciouz PoE2 Loot Filter
-# EA V1.1c Basic Filter
+# EA V1.2 Basic Filter
 #=========================================================
 
 #==============================
@@ -284,51 +284,88 @@ Show # Normals
 	Quality = 0
 	Rarity Normal
 	SetFontSize 26
-	SetBackgroundColor 150 150 150 200
+	SetBackgroundColor 150 150 150 150
 	SetBorderColor 255 255 255 200
 	SetTextColor 255 255 255 255
 
 
-
-
 #==============================
-#           SOCKETS
+#      SOCKETS AND QUALITY
 #==============================
 
-Show # Rare w/ Sockets
+Show # Rare Socket and Quality
+    Rarity Rare
+    Sockets > 0
+    Quality > 0
+    SetFontSize 36
+    SetBackgroundColor 200 170 40 220
+    SetBorderColor 255 0 0 255
+    SetTextColor 255 0 0 255
+
+Show # Rare Only Socket
+    Rarity Rare
+    Sockets > 0
+    SetFontSize 36
+    SetBackgroundColor 63 55 15 200
+    SetBorderColor 255 0 0 255
+    SetTextColor 240 210 80 255
+
+Show # Rare Only Quality
+    Rarity Rare
+    Quality > 0
+    SetFontSize 36
+    SetBackgroundColor 63 55 15 200
+	SetBorderColor 200 175 65 255
+    SetTextColor 255 0 0 255
+
+Show # Magics Socket and Quality
 	Sockets > 0
-	Rarity  Rare
-	SetFontSize 36
-	SetBorderColor 255 0 0 255
-
-Show # Magic w/ Sockets
-	Sockets > 0
-	Rarity Magic
-	SetBorderColor 255 0 0 255
-
-Show # Normal w/ Sockets
-	Sockets > 0
-	Rarity Normal
-	SetBorderColor 255 0 0 255
-
-#==============================
-#           QUALITY
-#==============================
-
-Show # RARE
-	Quality > 0
-	Rarity  Rare
-	SetFontSize 36
-	SetTextColor 255 0 0 255
-
-Show # MAGIC
 	Quality > 0
 	Rarity Magic
+	SetFontSize 30
+	SetBackgroundColor 20 25 50 230
+	SetBorderColor 255 0 0 255
 	SetTextColor 255 0 0 255
 
-Show # NORMAL
+Show # Magics Only Socket
+    Sockets > 0
+    Rarity Magic
+    SetFontSize 30
+    SetBackgroundColor 20 25 50 230
+    SetBorderColor 255 0 0 255
+	SetTextColor 115 145 245 255
+
+Show # Magics only Quality
+	Quality > 0
+	Rarity Magic
+	SetFontSize 30
+	SetBackgroundColor 20 25 50 230
+	SetBorderColor 90 110 190 255
+	SetTextColor 255 0 0 255
+
+Show # Normals Socket and Quality
+	Sockets > 0
 	Quality > 0
 	Rarity Normal
+	SetFontSize 26
+	SetBackgroundColor 150 150 150 150
+	SetBorderColor 255 0 0 200
+	SetTextColor 255 0 0 255
+
+Show # Normals Only Socket
+	Sockets > 0
+	Rarity Normal
+	SetFontSize 26
+	SetBackgroundColor 150 150 150 150
+	SetBorderColor 255 0 0 200
+	SetTextColor 255 255 255 255
+
+Show # Normals Only Quality
+	Quality > 0
+	Rarity Normal
+	SetFontSize 26
+	SetBackgroundColor 150 150 150 150
+	SetBorderColor 255 255 255 200
 	SetTextColor 255 0 0 255
 
 #==============================
